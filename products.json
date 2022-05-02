@@ -1,0 +1,88 @@
+{
+    "products": [
+        {
+            "name": "Mictrosoft-Surface",
+            "price": "640",
+            "img": "./images/microsoft-laptop.jpg",
+            "type": "laptop",
+            "id": "21"
+        },
+        {
+            "name": "iPhone 13",
+            "price": "1000",
+            "img": "./images/iphone-mobile.jpg",
+            "type": "phone",
+            "id": "32"
+        },
+        {
+            "name": "Macbook air",
+            "price": "1000",
+            "img": "./images/apple-laptop.jpg",
+            "type": "laptop",
+            "id": "43"
+        },
+        {
+            "name": "Galaxy S22 Ultra",
+            "price": "1250",
+            "img": "./images/samsung-phone.jpg",
+            "type": "phone",
+            "id": "84"
+        },
+        {
+            "name": "Asus vivo Book",
+            "price": "1000",
+            "img": "./images/asus-laptop.jpg",
+            "type": "laptop",
+            "id": "51"
+        },
+        {
+            "name": "Lenovo - ideaPad",
+            "price": "570",
+            "img": "./images/lenovo-laptop.jpg",
+            "type": "laptop",
+            "id": "66"
+        },
+        {
+            "name": "Pixel 3 XL",
+            "price": "600",
+            "img": "./images/google-phone.jpg",
+            "type": "phone",
+            "id": "77"
+        },
+        {
+            "name": "xiaomi",
+            "price": "70",
+            "img": "./images/xiaomi-phone.jpg",
+            "type": "phone",
+            "id": "88"
+        },
+        {
+            "name": "ADATA",
+            "price": "35",
+            "img": "./images/Adata-hard.jpg",
+            "type": "hard",
+            "id": "99"
+        },
+        {
+            "name": "Wastern",
+            "price": "35",
+            "img": "./images/wastern-hard.jpg",
+            "type": "hard",
+            "id": "10"
+        },
+        {
+            "name": "Toshiba",
+            "price": "100",
+            "img": "./images/toshiba-hard.jpg",
+            "type": "hard",
+            "id": "11"
+        },
+        {
+            "name": "Silicon Power",
+            "price": "120",
+            "img": "./images/silicon-power-hard.jpg",
+            "type": "hard",
+            "id": "12"
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Shopping jS</title>
+</head>
+<body class="bg-white">
+
+    <div id="cart-parent" class="w-full h-screen bg-white absolute top-0 left-0 z-50 hidden">
+        <div class="w-full h-full relative">
+            <button id="close-cart" class=" block bg-blue-500 m-4 text-3xl text-white rounded-lg px-3 py-1 bx bx-left-arrow-alt"></button>
+            <hr>
+            <ul id="cart-list" class="my-5 w-full h-max p-6">
+                <!-- <li class="bg-teal-200 p-3 rounded-lg flex flex-col md:flex-row justify-between mb-4">
+                    <img src="./images/Adata-hard.jpg" class="w-2/3 mx-auto md:mx-0 md:w-20 rounded-2xl" alt="product img">
+
+                    <div class="mx-auto my-6 md:mx-0 md:my-0 flex flex-col sm:flex-row gap-6 text-center">
+                        <div>
+                            <h4 class="mb-3 font-bold text-xl">Name</h4>
+                            <p class="text-lg text-teal-700">Microsoft Surface M1</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="mb-3 font-bold text-xl">Type</h4>
+                            <p class="text-lg text-teal-700">product</p>
+                        </div>
+
+                        <div>
+                            <h4 class="mb-3 font-bold text-xl">Name</h4>
+                            <p class="text-lg text-teal-700">product</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center mx-auto md:mx-0 gap-x-3">
+                        <button class="bg-blue-500 text-white p-1 rounded-lg text-3xl       bx bx-chevron-up"></button>
+                        <span class="text-xl font-medium">2</span>
+                        <button class="bg-blue-500 text-white p-1 rounded-lg text-3xl       bx bx-chevron-up"></button>
+                    </div>
+
+                </li> -->
+            </ul>
+            <hr>
+            <div class="px-6">
+                <h2 class="mt-10 text-3xl">Total Price</h2>
+                <p id="total-price" class="text-xl my-3 text-teal-600">$0</p>
+
+                <h2 class="mt-10 text-3xl">Total Amount</h2>
+                <p id="total-amount" class="text-xl my-3 text-teal-600">0</p>
+
+                <button id="clear-cart" class="mt-6 bg-red-500 text-white px-4 py-3 rounded-lg text-xl">Clear</button>
+                <button class="mt-6 bg-blue-500 text-white px-4 py-3 rounded-lg text-xl">Coutinue</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="main-parent">
+        <header class="w-full py-12 bg-teal-50">
+            <div class="container mx-auto flex items-center justify-between">
+                <a href="#" class="text-blue-700">O.JR</a>
+    
+                <input id="search-product" type="text" class="px-5 py-2 rounded-lg w-max border" placeholder="Search here!" style="outline: none;">
+            </div>
+        </header>
+    
+        <main class="container mx-auto py-8">
+            <div class="w-full flex h-max sm:flex-row flex-col-reverse">
+                <div id="products-parent" class="w-full h-max sm:w-3/4 flex flex-col md:flex-row flex-wrap gap-y-4">
+                    <!-- <div class="w-full md:w-1/2 p-5">
+                        <div class="w-full h-max border bg-white p-2">
+                            <img src="${product.img}" alt="${product.name} - img" class="w-full mb-5">
+                            <div class="my-3">
+                                <hr>
+                                <p class="text-lg my-2">- Name : <span class="font-semibold">${product.name}</span></p>
+                                <p class="text-lg my-2">- Type : <span class="font-semibold">${product.type}</span></p>
+                                <p class="text-lg my-2">- Price : <span class="font-semibold">$${product.price}</span></p>
+                                <hr>
+                                <button data-id="${product.id}" class="bg-blue-500 my-3 px-5 cursor-pointer hover:bg-blue-400 py-2 rounded-lg text-white">More</button>
+                            </div>
+                        </div>
+                    </div>  -->
+                </div>
+    
+    
+    
+                <div class="w-full sm:w-1/4 h-max mb-8 sm:mb-0 px-4">
+                    <button id="show-cart" class="mb-5 w-full bg-blue-500 rounded-xl py-4 text-white font-medium hover:bg-blue-600 cursor-pointer">Show Card</button>
+                    <hr>
+                    <h2 class="my-4">Filter Products : </h2>
+                    <select id="filter-products" class=" block w-full px-3 py-2 text-lg font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out mb-5">
+                        <option value="all">All</option>
+                        <option value="phone">Mobile Phone</option>
+                        <option value="laptop">LapTop</option>
+                        <option value="hard">External Hard</option>
+                    </select>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/app.js"></script>
+</body>
+</html>
